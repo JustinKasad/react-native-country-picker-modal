@@ -324,17 +324,20 @@ export default class CountryPicker extends Component {
   renderCountryDetail(cca2) {
     const country = countries[cca2]
     return (
-      <View style={styles.itemCountry}>
-        {CountryPicker.renderFlag(cca2)}
-        <View style={styles.itemCountryName}>
-          <Text style={styles.countryName} allowFontScaling={false}>
-            {this.getCountryName(country)}
-            {this.props.showCallingCode &&
-            country.callingCode &&
-            <Text>{` (+${country.callingCode})`}</Text>}
-          </Text>
+        <View style={styles.itemCountry}>
+            {CountryPicker.renderFlag(cca2)}
+            <View style={styles.itemCountryName}>
+                <Text style={styles.countryName} allowFontScaling={false}>
+                    {this.getCountryName(country)}
+                </Text>
+                <Text style={styles.countryCode} allowFontScaling={false}>
+                    { this.props.showCallingCode && country.callingCode &&
+                        <Text>{` +${country.callingCode}`}</Text>
+                    }
+                </Text>
+
+            </View>
         </View>
-      </View>
     )
   }
 

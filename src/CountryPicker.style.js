@@ -62,9 +62,10 @@ export default StyleSheet.create({
   itemCountryName: {
     justifyContent: 'center',
     width: '70%',
-    borderBottomWidth: 2 / PixelRatio.get(),
-    borderBottomColor: '#ccc',
-    height: 20
+    minHeight: 20
+  },
+  countryCode: {
+    fontSize: getHeightPercent(2.2)
   },
   countryName: {
     fontSize: getHeightPercent(2.2)
