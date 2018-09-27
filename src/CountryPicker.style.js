@@ -77,7 +77,7 @@ export default StyleSheet.create({
     flex: 1
   },
   letters: {
-    marginRight: 10,
+    marginHorizontal: 10,
     backgroundColor: 'transparent',
     justifyContent: 'center',
     alignItems: 'center'
