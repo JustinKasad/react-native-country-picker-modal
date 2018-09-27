@@ -323,8 +323,9 @@ export default class CountryPicker extends Component {
 
   renderCountryDetail(cca2) {
     const country = countries[cca2]
+    const selectedStyle = (cca2 === this.props.cca2) ? styles.itemCountrySelected : {}
     return (
-        <View style={styles.itemCountry}>
+        <View style={[styles.itemCountry, selectedStyle]}>
             {CountryPicker.renderFlag(cca2)}
             <View style={styles.itemCountryName}>
                 <Text style={styles.countryName} allowFontScaling={false}>

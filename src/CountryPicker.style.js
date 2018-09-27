@@ -64,6 +64,9 @@ export default StyleSheet.create({
     width: '70%',
     minHeight: 20
   },
+  itemCountrySelected: {
+    backgroundColor: '#f4f4f4',
+  },
   countryCode: {
     fontSize: getHeightPercent(2.2)
   },
