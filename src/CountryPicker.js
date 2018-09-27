@@ -417,6 +417,7 @@ export default class CountryPicker extends Component {
                   renderRow={country => this.renderCountry(country)}
                   initialListSize={30}
                   pageSize={15}
+                  showsVerticalScrollIndicator={false}
                   onLayout={({ nativeEvent: { layout: { y: offset } } }) =>
                     this.setVisibleListHeight(offset)
                   }
